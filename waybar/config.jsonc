@@ -1,0 +1,36 @@
+{
+    "layer": "top",
+    "modules-left": [],
+    "modules-center": ["clock","hyprland/workspaces"],
+    "modules-right": ["battery"],
+    "sway/window": {
+        "max-length": 50
+    },
+    
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+
+    "battery": {
+	"interval": 60,
+	"format": "{capacity}% {icon}",
+	"format-icons": {
+		"default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+		"charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+	    }
+    },
+
+    "hyprland/workspaces": {
+	"format": "{name}: {icon}",
+	"on-click": "activate",
+	"format-icons": {
+		"Workspace 1": "",
+		"Workspace 2": "",
+		"Workspace 3": "",
+		"Workspace 4": "",
+		"active": "",
+		"default": ""
+	},
+	"sort-by-id": true
+}
+}
